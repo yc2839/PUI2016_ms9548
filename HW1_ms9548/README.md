@@ -7,4 +7,4 @@ was not responsive over e-mail.  I didn't have much time to wait around as I wor
 I take full responsibility for the incompleteness however.
 ______
 
-![alt tag](https://raw.githubusercontent.com/SpatialUrban/PUI2016_ms9548/HW1_ms9548/TerminalScreenhot_Homework1Assignment2.png)
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
