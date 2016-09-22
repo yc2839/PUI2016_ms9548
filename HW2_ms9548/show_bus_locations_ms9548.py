@@ -1,32 +1,47 @@
-# Author: federica bianco, NYU, September 2016
-##############################
-# Code written to demonstrate ho to pass arguments to a python script
-# for HW2 of PUI2016
-# http://cosmo.nyu.edu/~fb55/PUI2016
-##############################
-# put your name as input argument:
-# i.e. run the code as
-#      python aSimplePythonScript.py Dr.Bianco
-# notice that your name should be a single word (only the first line argument is read)
+# Matt Sloane (ms9548)
+# Homework 2 - Assignment 1: Tracking Each Vehicle for a Line
 
-# the next line import packages that change the python 2 print function
-# so that it require the same syntax as python 3
-# thus the code will work both in python 2 and python 3
 from __future__ import print_function
-# the next import allows me to read line input arguments
+
+import pylab as pl
+import json
 import sys
+try:
+    import urllib2 as urllib
+except ImportError:
+    import urllib.request as urllib
+#%pylab inline
 
 
-# this line checks how many arguments are passed to python
-# the arguments are stored in sys.argv which is a list
-# the first argument is the name of the code
-# so sys.argv is a list with at least one element
-# with your name in input it will be a list of 2
-# if you add more than one word as argument it will give you an error as well
-if not len(sys.argv) == 2:
+# Professor's script for number of arguments
+
+###########################################
+
+if not len(sys.argv) == 3:  # Assignment requires 2 arguments
     print("Invalid number of arguments. Run as: python  aSimplePythonScript.py YourNameHere")
     sys.exit()
 
-# this line prints Hallo and then your name
-# which you provide as argument
-print("Hallo " + sys.argv[1] + "!")
+###########################################
+
+api_key = str(sys.argv[1])
+bus_route = str(sys.argv[2])
+
+
+#api_key_local = '68673bb3-d51c-4206-889a-8e8fa39ec14b'
+#bus_route_local = 'B52'
+
+mta_bus_api = 'http://bustime.mta.info/api/siri/vehicle-monitoring.json?key=' + api_key + '&VehicleMonitoringDetailLevel=calls&LineRef=' + bus_route
+
+response = urllib.urlopen(mta_bus_api)
+data = response.read().decode("utf-8")
+data = json.loads(data)
+
+dict_nest = data['Siri']['ServiceDelivery']['VehicleMonitoringDelivery'][0]['VehicleActivity']
+active_buses = len(dict_nest)
+
+print ('Bus Line: ' + bus_route)
+print ('Number of Active Buses: ' + str(active_buses))
+
+for i in range(active_buses):
+    j = str(dict_nest[i]['MonitoredVehicleJourney']['VehicleLocation'])
+    print('Bus '+ str(i) + ' is at ' + j)
