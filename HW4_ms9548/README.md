@@ -1,9 +1,9 @@
-# Homework 4
+# Homework 4 README File, Assignment Descriptions / Writeups
 
 ## Assignment 1
 
 CitibikeReview_ms9548.md pull request made with https://github.com/athenaxin/PUI2016_xt483/tree/master/HW3_xt483 - a
-copy is also in this repository.
+copy of that file is also in this repository.
 
 ## Assignment 2
 
