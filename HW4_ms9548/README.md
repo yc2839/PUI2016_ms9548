@@ -11,7 +11,7 @@ copy is also in this repository.
 
 | **Statistical Analyses	|  IV(s)  |  IV type(s) |  DV(s)  |  DV type(s)  |  Control Var | Control Var type  | Question to be answered | _H0_ | alpha | link to paper **| 
 |:----------:|:----------|:------------|:-------------|:-------------|:------------|:------------- |:------------------|:----:|:-------:|:-------|
-Chi-Squared | 1, Soil Attributes / Properties | Categorical | 1, Pocket Gopher subgenera | Categorical | None | N/A | 	Soil attributes dictictate likelihood of the presence of certain subgeneras of Pocket Gophers  | H0: Any soil attributes/properties have the same influence on the presence of certain pocket gopher subgeneras as specific soil attributes / properties   | 0.05 | [Morphological Adaptations for Digging and Climate-Impacted Soil Properties Define Pocket Gopher (Thomomys spp.) Distributions](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064935) |
+Chi-Squared | 1, Soil Attributes / Properties | Categorical | 1, Pocket Gopher subgenera | Categorical | None | N/A | 	Soil attributes dictate likelihood of the presence of certain subgeneras of Pocket Gophers  | H0: Any soil attributes/properties have the same influence on the presence of certain pocket gopher subgeneras as specific soil attributes / properties   | 0.05 | [Morphological Adaptations for Digging and Climate-Impacted Soil Properties Define Pocket Gopher (Thomomys spp.) Distributions](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064935) |
   |||||||||
 
 ### Group 2 Statistical Tests Selection / Analysis
