@@ -48,10 +48,10 @@ This finding should not be surprising - the program group and control group had 
 I recreated the professor's Citibike Analysis using the June 2015 citibike data.  Note that I used the data acquiring method I used in the related assignment for homework 3, using the zipfile module.  Further, I tried to append the July 2015 dataset in order to use multiple datasets (as suggested by the instructions), but that was giving me duplication errors later in the analysis that I couldn't solve so I abandoned that approach, only using June 2015 data.
 
 
-##  Idea:  Proportionally more men use citibike than women (P0 > P1)
-##  Null Hypothesis:  The proportion of women who use citibike is equal to or greater than that of men(H0: P1 - P0 <= 0)
-##  Alt Hypothesis:  Proportionally more men use citibike than women (H1: P0 - P1 > 0)
-##  α = 0.05
+###  Idea:  Proportionally more men use citibike than women (P0 > P1)
+###  Null Hypothesis:  The proportion of women who use citibike is equal to or greater than that of men(H0: P1 - P0 <= 0)
+###  Alt Hypothesis:  Proportionally more men use citibike than women (H1: P0 - P1 > 0)
+###  α = 0.05
 
 After recreating the professor's analysis, I used the the three tests identified in the assignment including:
 
