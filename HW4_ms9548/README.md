@@ -43,3 +43,40 @@ Per the assignment, the data was also run through the Chi Square Evalution funct
 
 This finding should not be surprising - the program group and control group had a relatively similar sample size and the percentage of program participants that experienced recidivism within 1-3 years of release was comparable to its control group counterpart.  Thus, participation in the program had little impact on rates of recidivism.
   
+## Assignment 4
+
+I recreated the professor's Citibike Analysis using the June 2015 citibike data.  Note that I used the data acquiring method I used in the related assignment for homework 3, using the zipfile module.  Further, I tried to append the July 2015 dataset in order to use multiple datasets (as suggested by the instructions), but that was giving me duplication errors later in the analysis that I couldn't solve so I abandoned that approach, only using June 2015 data.
+
+
+##  Idea:  Proportionally more men use citibike than women (P0 > P1)
+##  Null Hypothesis:  The proportion of women who use citibike is equal to or greater than that of men(H0: P1 - P0 <= 0)
+##  Alt Hypothesis:  Proportionally more men use citibike than women (H1: P0 - P1 > 0)
+##  α = 0.05
+
+After recreating the professor's analysis, I used the the three tests identified in the assignment including:
+
+Kolmogorov–Smirnov Test (for the full sample and for a subsample of 1 every 200 records)
+Pearsons Correlation Test (equal sized male and female samples, sorted)
+Spearman's Correlation Test (equal sized male and female samples, sorted)
+
+### Analysis Results
+
+#### Kolmogorov–Smirnov Test (Full Dataset)
+
+At a significance level of 0.05, the critical KS value is 1.36 (in the table provided in the example text).  The calculated KS statistic is approximate;y 0.102, much lower than the critical value.  Because it is lower than the threshold, we cannot reject the Null Hypothesis
+
+#### Kolmogorov–Smirnov Test (Sub Dataset)
+
+At a significance level of 0.05, the critical KS value is 1.36 (in the table provided in the example text).  The calculated KS statistic is approximate;y 0.113, much lower than the critical value.  Because it is lower than the threshold, we cannot reject the Null Hypothesis.
+
+#### Pearsons Correlation Test
+
+The calculated pearson's coefficient is approximately 0.997, indicating a very strong positive relationship between the two variables (a calculated coefficient of 1 indicating the strong possible correlation).  Under this condtion, it would be expected that as one variable increases, the other would too (and as one decreased, the other one would as well).  Regarding the Null Hypothesis, this relationship indicates that the proportional number of male riders would be relatively equal to the proportion of female riders (i.e., P0 = P1), so the Null cannot be rejected using the results of this test.
+
+The p-value indicated the probability of the results of the test being random.  The calculated p-value for this analysis is 0, which states a 0 % chance these results are random.
+
+#### Pearsons Correlation Test
+
+Similar to the pearson's coefficient, the spearmen's coefficient indicates a very high positive correlation (0.999), which indicates that as one variable increases the other would be expected to as well.  Regarding the Null Hypothesis, this relationship indicates that the proportional number of male riders would be relatively equal to the proportion of female riders (i.e., P0 = P1), so the Null cannot be rejected using the results of this test.
+
+The p-value indicated the probability of the results of the test being random.  The calculated p-value for this analysis is 0, which states a 0 % chance these results are random.
