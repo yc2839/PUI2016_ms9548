@@ -1,5 +1,23 @@
 ## Assignment 1
 
+In this assignment, the age distribution for the June 2015 citibike data was tested as a normal and logistic distribution using the Kolmogorov-Smirnov (KS) and Anderson Darling (AD) tests.  Two Null Hypothesis were developed for each distribution and tested:
+
+### Gaussian / Normal Distribution Null Hypothesis
+
+Null Hypothesis (HO): The data follows a normal / gaussian distribution
+Alternative Hypothesis (HA): The data does not follow a normal / gaussian distribution
+Significance Level - 0.05
+
+Both the KS and AD goodness of fit tests demonstrated that their respective statistics exceeded their associated critical value at the 0.05 significance level, and therefore the Null Hypothesis is rejected.
+
+### Logistic Distribution Null Hypothesis
+
+Null Hypothesis (HO): The data follows a logistic distribution
+Alternative Hypothesis (HA): The data does not follow a logistic distribution
+Significance Level - 0.05
+
+Both the KS and AD goodness of fit tests demonstrated that their respective statistics exceeded their associated critical value at the 0.05 significance level, and therefore the Null Hypothesis is rejected.
+
 ## Assignment 2
 
 ## Assignment 3
