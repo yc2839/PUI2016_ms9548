@@ -20,6 +20,12 @@ Both the KS and AD goodness of fit tests demonstrated that their respective stat
 
 ## Assignment 2
 
+The census was read into respective separate dictionaries with appropriate key identifiers, then concatenated into all male and all female data sets.  Scatter plots were generated of total female median income versus male median income for all races considered (white, black, asian, hispanic, and all ethnicities).  Several regression lines were plotted on the scatter plot, including a 1-1 line, best fit line, and ordinary least squares regression, in order to develop tools to estimate comparisons for male vs. female pay.  
+
+NOTE:  From part 4 of the asssignment on (Best Fit Line through the end) I relied heavily on William Xia's code, because I had no idea how to really approach these portions.  Usually, I have some idea of how to tackle the assignments, and can at least develop a stab at the code that needs some guidance / tweeks to be complete.  In this case, I really was lost and I did my best to research approaches and all of that.  I'm not going to make excuses, but to be transparent I thought it a stretch to go from what we covered in class to what was expected in the second half of this assignment.  Even William Xia's code that I borrowed was cited from someone else who apparently is very versed is python / statistics (not sure who, I'm sure William cited correctly in his README markdown).
+
+Maybe I just need to review some more materials - 
+
 ## Assignment 3
 
 ### Do diets help lose more fat than the exercise?
