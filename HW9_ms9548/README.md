@@ -1,1 +1,1 @@
-
+#### Assignment 1 includes analysis of subway rides / usage as prescribed by the assignment, including identification of outlies in subway rides (Task 1, identified event was Hurricane Sandy) and analysis of largest increase and decrease of card types (Task 2). All of this code was developed by myself (except where noted in the actual notebook); I am waiting on Task 3 code from my group members.
